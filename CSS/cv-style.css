@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #778899;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px black;
+}
+
+.left-side {
+    position: relative;
+    background: rgb(145, 125, 16);
+    padding: 40px;
+}
+
+.right-side {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+.profile-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+
+.profile-box .image-box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px black;
+}
+
+.profile-box .image-box .image-style {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-box h1 {
+    color: white;
+    font-size: 160%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Glory', sans-serif;
+}
+
+.profile-box h2 {
+    color: whitesmoke;
+    font-size: 120%;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+}
+
+.profile-box h1:hover, .profile-box h2:hover {
+    color: rgb(255, 188, 188);
+}
+
+.about-section, .skill-section, .achievement-section, .contact-section, .interest-section {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+.interest-section {
+    padding-bottom: 0px;
+    border-bottom: 0px solid black;
+}
+
+.about-section h2:hover, .skill-section h2:hover, .achievement-section h2:hover, .contact-section h2:hover, .interest-section h2:hover {
+    color: rgb(255, 188, 188);
+}
+
+.about-section h2, .skill-section h2, .achievement-section h2, .contact-section h2, .interest-section h2 {
+    color: white;
+    font-size: 130%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Glory', sans-serif;
+}
+
+.skill-section ul {
+    list-style-position: inside;
+}
+
+.skill-section a {
+    font-weight: bold ;
+    font-family: 'Glory', sans-serif;
+    text-decoration: none !important;
+}
+
+.skill-section a:hover {
+    background-color: #dcd154;
+
+}
+
+.about-section p {
+    color: black;
+    font-weight: 600;
+}
+
+.contact-section .contact-item a {
+    color: black;
+    padding-left: 10%;
+    font-weight: bold ;
+    font-family: 'Glory', sans-serif;
+    text-decoration: none !important;
+}
+
+.contact-item:hover {
+    background-color: #dcd154;
+}
+
+#Hackathon {
+    color: indigo;
+    font-family: 'Glory', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-row-div {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    /*margin-top: 5%;*/
+    /*margin-bottom: 5%;*/
+}
+
+.card {
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2% 2%;
+    margin: 2% 2%;
+    background: #dcd154;
+    font-family: 'Arial', sans-serif;
+}
+
+.card:hover {
+    background: white;
+    color: rgb(255, 188, 188);
+}
+
+.skill-section ul{
+    margin-top: 5%;
+}
+
+.education-section, .experience-section, .academic-project-section, .hackathon-project-section, .research-section {
+    position: relative;
+    display: flex;
+    /*margin-bottom: 10px;*/
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 20px;
+    /*border-bottom: 3px solid black;*/
+}
+
+.education-section h1, .experience-section h1, .academic-project-section h1, .hackathon-project-section h1, .research-section h1 {
+    color: #FFC300;
+    font-size: 150%;
+    /*margin-top: 10px;*/
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Glory', sans-serif;
+    border-bottom: 3px solid black;
+}
+
+.education-section h1:hover, .experience-section h1:hover, .academic-project-section h1:hover, .hackathon-project-section h1:hover, .research-section h1:hover{
+    color: black;
+}
+
+.research-section b, .hackathon-project-section b, .academic-project-section b {
+    color: grey;
+    margin-top: 5px;
+}
+
+.experience-section h3, .education-section h3 {
+    color: grey;
+}
+
+.research-section b:hover, .hackathon-project-section b:hover, .academic-project-section b:hover, .experience-section h3:hover, .education-section h3:hover {
+    color:goldenrod
+}
+
+.flex-space-div {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*margin-top: 5%;*/
+    margin-bottom: 5px;
+}
+
+.items {
+    /*background-color: #f1f1f1;*/
+    /*width: 100px;*/
+    /*margin: 10px;*/
+    text-align: left;
+    /*line-height: 75px;*/
+    /*font-size: 30px;*/
+  }
+
+  .academic-project-section .flex-space-div {
+    margin-bottom: 0px;
+  }
+
+  .academic-project-section p {
+      text-align: justify;
+      /*border-bottom: 1px solid black;*/
+      padding-bottom: 5px;
+  }
+
+
+  @media all and (max-width: 720px){
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+  }
